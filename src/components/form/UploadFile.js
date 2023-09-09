@@ -2,6 +2,8 @@ import React from 'react';
 import Sidebar from '../navabar/Sidebar';
 import Topbar from '../navabar/TopBar';
 import Upload from './Upload';
+
+
 function UploadFile() {
   return (
     <div className="container_div">
@@ -9,11 +11,9 @@ function UploadFile() {
     
     <div className="main">
       <Topbar />
-       {/* <div className="bg-white mt-2 w-full px-3 "> */}
-          {/* ... other content ... */}
-        {/* </div> */}
+       
         
-        <Upload />
+        <Upload/>
       </div>
     </div>
   );
