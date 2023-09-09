@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="flex min-h-screen">
+      <!-- Sidebar -->
+      <div class="ml-1 mt-0 w-[270px] bg-gray-700 px-3">
+        <div class="pt-6 p-2">
+          <img src="image/sidebar-logo.png" alt="" />
+        </div>
+
+        <div class="mt-8">
+          <ul class="Montserrat">
+            <li class="my-8 p-3 icon w-[258px] h-12">
+              <div class="flex gap-2">
+                <img
+                  src="image/icon/New-File.png"
+                  class="w-[24px] h-[24px] leading-tight"
+                  alt=""
+                />
+                <span class="text-white text-lg leading-tight">New File</span>
+              </div>
+            </li>
+
+            <li class="flex gap-2 my-8 p-2 icon w-[258px] h-12 p-3">
+              <img
+                src="image/icon/UnW-360.png"
+                class="w-[24px] h-[24px] leading-tight"
+                alt=""
+              />
+              <span class="text-white text-lg leading-tight">UW360</span>
+            </li>
+            <li class="flex gap-2 my-8 p-2 icon w-[258px] h-12 p-3">
+              <img
+                src="image/icon/Update-incomplete-file.png"
+                class="w-[24px] h-[24px] leading-tight"
+                alt=""
+              />
+              <span class="text-white text-lg leading-tight"
+                >Update Incomplete File</span
+              >
+            </li>
+            <li class="flex gap-2 my-8 p-2 icon w-[258px] h-12 p-3">
+              <img
+                src="image/icon/Check-Status.png"
+                class="w-[24px] h-[24px] leading-tight"
+                alt=""
+              />
+              <span class="text-white text-lg leading-tight">Check Status</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="h-[98px] top-color w-full text-gray-700">
+        <!-- Top Bar -->
+
+        <div class="flex justify-end items-center my-[24px] w-full pr-8 gap-2">
+          <img
+            src="image/icon/Notification.png"
+            class="w-[24px] h-[24px] mx-4"
+            alt=""
+          />
+          <img src="image/icon/profile-icon.png" alt="" />
+          <img
+            src="image/icon/Date-arrow.png"
+            class="w-[14px] arrow-icon"
+            alt=""
+          />
+          <div class="">
+            <h1 class="Montserrat font-bold">Sofiqul Islam</h1>
+            <p class="text-xs">234244</p>
+          </div>
+        </div>
+        <!-- Dropdown Card -->
+        <div
+          class="dropdown mr-16 p-4 bg-gray-100 text-black shadow-2xl rounded-md"
+        >
+          <div class="w-24 h-24 mr-16">
+            <a href="#">Settings</a><br />
+            <a href="#">Logout</a>
+          </div>
+        </div>
+
+        <!--topbar end div-->
+
+        <!-- Main Content -->
+        <div class="bg-white shadow-sm w-full h-full p-[32px]">
+          <div class="flex justify-between">
+            <ul class="flex gap-3 font-bold text-lg text-gray-500">
+              <li><img src="image/icon/arrow-left.png" alt="" /></li>
+              <li><h1 class="">Create New File</h1></li>
+            </ul>
+            <ul class="flex mr-8 text-gray-700 w-[273px]">
+              <li><a href="#">SLI/</a></li>
+              <li><a href="#">New File/</a></li>
+              <li><a href="#">Create New File</a></li>
+            </ul>
+          </div>
+
+          <!--document upload start-->
+
+          <div class="w-full mt-8 bg-stone-100 rounded-lg">
+            <div>
+              <ol class="flex items-center m-4 ">
+                <li
+                  class="flex w-full items-center after:content-[''] bor after:w-full after:h-1 after:border-b after:border-[10px] after:inline-block"
+                ></li>
+                <li
+                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-8 after:inline-block"
+                >
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-full lg:h-12 lg:w-12 background-top shrink-0"
+                  >
+                    <img src="image/icon/file-upload-line.png" />
+                    <span class="absolute mt-16">Document Upload</span>
+                  </span>
+                </li>
+                <li
+                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-8 after:inline-block"
+                >
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-full wiz lg:h-12 lg:w-12 background-wiz shrink-0"
+                  >
+                    <img src="image/icon/file-user-line.png" alt="" />
+                    <span class="absolute mt-16">Photograph</span>
+                  </span>
+                </li>
+                <li
+                  class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-8 after:inline-block"
+                >
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-full background-wiz lg:h-12 lg:w-12 shrink-0"
+                  >
+                    <img src="image/icon/user-voice-line.png" alt="" />
+                    <span class="absolute mt-16">Interview</span>
+                  </span>
+                </li>
+              </ol>
+            </div>
+
+            <!-- end step indicators -->
+
+           <div class="grid grid-cols-4 gap-2 mt-8">
+
+
+            <div class=" h-[288px] shadow-xl bg-white flex flex-col items-center p-6 rounded-lg m-3">
+              <h1 class="text-xl font-semibold mb-4">Proposal Form</h1>
+            
+              <div class="w-[223px] h-28 border-dotted border-2 border-gray-300 rounded-md flex flex-col items-center justify-center p-4 cursor-pointer">
+                <img src="image/icon/upload-2-fill.png" alt="Upload Icon" class=" mb-2" />
+                <span class="text-gray-700 text-sm text-center leading-tight mb-1">Drag & Drop or</span>
+                <span class="text-blue-600 text-sm font-medium underline text-center">Browse</span>
+              </div>
+            Or
+              <button class="mt-6 px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 transition duration-300 ease-in-out flex gap-1 py-2 px-2">
+                <img src="image/icon/qr-scan-line.png" alt="">
+                Cancel
+              </button>
+            </div>
+
+            <div class="  shadow-xl bg-white flex flex-col items-center p-6 rounded-lg m-3">
+              <h1 class="text-xl font-semibold mb-4">Identity Document</h1>
+            
+              <div class="w-[223px] h-28 border-dotted border-2 border-gray-300 rounded-md flex flex-col items-center justify-center p-4 cursor-pointer">
+                <img src="image/icon/upload-2-fill.png" alt="Upload Icon" class=" mb-2" />
+                <span class="text-gray-700 text-sm text-center leading-tight mb-1">Drag & Drop or</span>
+                <span class="text-blue-600 text-sm font-medium underline text-center">Browse</span>
+              </div>
+            
+              Or
+              <button class="mt-6 px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 transition duration-300 ease-in-out flex gap-1 py-2 px-2">
+                <img src="image/icon/qr-scan-line.png" alt="">
+                Cancel
+              </button>
+            </div>
+            <div class="  shadow-xl bg-white flex flex-col items-center p-6 rounded-lg m-3">
+              <h1 class="text-xl font-semibold mb-4">Medicale Cirtificet</h1>
+            
+              <div class="w-[223px] h-28 border-dotted border-2 border-gray-300 rounded-md flex flex-col items-center justify-center p-4 cursor-pointer">
+                <img src="image/icon/upload-2-fill.png" alt="Upload Icon" class=" mb-2" />
+                <span class="text-gray-700 text-sm text-center leading-tight mb-1">Drag & Drop or</span>
+                <span class="text-blue-600 text-sm font-medium underline text-center">Browse</span>
+              </div>
+             Or
+              <button class="mt-6 px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 transition duration-300 ease-in-out">
+                <img src="" alt="">
+                Cancel
+              </button>
+            </div>
+            <div class="  shadow-xl bg-white flex flex-col items-center p-6 rounded-lg m-3">
+              <h1 class="text-xl font-semibold mb-4">Salary Cirtificet</h1>
+            
+              <div class="w-[223px] h-28 border-dotted border-2 border-gray-300 rounded-md flex flex-col items-center justify-center p-4 cursor-pointer">
+                <img src="image/icon/upload-2-fill.png" alt="Upload Icon" class=" mb-2" />
+                <span class="text-gray-700 text-sm text-center leading-tight mb-1">Drag & Drop or</span>
+                <span class="text-blue-600 text-sm font-medium underline text-center">Browse</span>
+              </div>
+            
+              Or
+              <button class="mt-6 px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 transition duration-300 ease-in-out flex gap-1 py-2 px-2">
+                <img src="image/icon/qr-scan-line.png" alt="">
+                Cancel
+              </button>
+            </div>
+
+            <div class="  shadow-xl bg-white flex flex-col items-center p-6 rounded-lg m-6">
+              <h1 class="text-xl font-semibold mb-4">Tin Cirtificet</h1>
+            
+              <div class="w-[223px] h-28 border-dotted border-2 border-gray-300 rounded-md flex flex-col items-center justify-center p-4 cursor-pointer">
+                <img src="image/icon/upload-2-fill.png" alt="Upload Icon" class=" mb-2" />
+                <span class="text-gray-700 text-sm text-center leading-tight mb-1">Drag & Drop or</span>
+                <span class="text-blue-600 text-sm font-medium underline text-center">Browse</span>
+              </div>
+            
+              Or
+              <button class="mt-6 px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 transition duration-300 ease-in-out flex gap-1 py-2 px-2">
+                <img src="image/icon/qr-scan-line.png" alt="">
+                Cancel
+              </button>
+            </div>
+            
+           </div>
+
+          <!--document upload end-->
+        </div>
+        <!--main-content end-->
+      </div>
+    </div>
+  </body>
+</html>

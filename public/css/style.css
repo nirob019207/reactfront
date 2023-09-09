@@ -1,0 +1,412 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+   box-shadow: border-box;
+   font-family: 'Montserrat', sans-serif;
+
+
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container-div{
+    position: relative;
+    width: 100%;
+}
+.navigation {
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    background-color: #484E52;
+    border-left: 10px solid #484E52;
+    transition: 0.5s;
+    overflow: hidden;
+   
+   
+  }
+  
+
+.navigation.active {
+    width: 80px;
+  
+}
+.navigation.active span {
+    display: none;
+}
+
+.navigation.active ul li a .title{
+    display: none;
+}
+
+.navigation ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+  
+    
+   
+}
+
+.arrow-icon {
+    transition: transform 0.3s; /* Add a transition for smooth rotation */
+}
+
+.toggle.active .arrow-icon {
+    transform: rotate(180deg); /* Rotate the arrow icon 180 degrees when active (toggled) */
+}
+
+
+.navigation ul li:hover a,
+.navigation ul li.hovered a{
+    background:white;
+}
+.navigation ul li:nth-child(1){
+    margin-bottom: 60px;
+    pointer-events: none;
+    
+}
+
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color:white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+    
+
+
+}
+.navigation ul li:hover a,
+.navigation ul li.hovered a{
+    color:#484E52;
+    
+
+
+}
+
+.navigation ul li a .icon {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    width: 60px;
+    height: 60px;
+}
+.navigation ul li a  .title {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    height: 60px;
+}
+
+
+
+.navigation ul li a img{
+    width:30px;
+    
+
+
+}
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before{
+    content:'';
+position: absolute;
+right: 0;
+top: -50px;
+width: 50px;
+height: 50px;
+
+background-color: transparent;
+border-radius: 50%;
+box-shadow: 35px 35px 0 10px white;
+pointer-events: none;
+}
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after{
+    content:'';
+position: absolute;
+right: 0;
+bottom: -50px;
+width: 50px;
+height: 50px;
+background-color: transparent;
+
+border-radius: 50%;
+box-shadow: 35px -35px 0 10px white;
+pointer-events: none;
+}
+
+.main{
+    position: absolute;
+    width:calc(100% - 280px);
+    left: 280px;
+    min-height: 100vh;
+    background: white;
+    transition: 0.5;
+    
+}
+.main.active{
+    position:absolute;
+    width:calc(100% - 80px);
+    left: 80px;
+    
+}
+
+.topbar {
+    background-color: #F1F1E8;
+  
+    height:10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    
+}
+.topbar-right {
+    display: flex;
+    align-items: center;
+   
+}
+
+.toggle {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.notification{
+    width: 24px;
+}
+/* responsive  start*/
+
+@media(max-width:991px){
+    .navigation{
+        left:-280px
+    }
+    .navigation.active{
+        width: 280px;
+        left: 0;
+    }
+    .main{
+        width: 100%;
+        left:0;
+    }
+    .main.active{
+        left: 280px;
+    }
+    .navigation.active ul li a .title{
+        display: block;
+        display: flex;
+     
+    }
+    .navigation.active span {
+        display: block;
+    }
+
+
+}
+
+@media(max-width:768px){
+
+    
+   
+
+}
+@media(max-width:480px){
+    .navigation{
+        width: 100%;
+        left:-100%;
+        z-index:1000;
+         
+    
+      }
+    .navigation.active{
+        width: 100%;
+        left: 0;
+    }
+    .toggle{
+        z-index: 10001;
+    }
+    .main.toggle.active{
+        position: fixed;
+        right: 0;
+        left: initial;
+        background-color: white;
+    }
+    .navigation.active ul li a .title{
+        display: block;
+        display: flex;
+    }
+    .navigation.active span {
+        display: block;
+    }
+    .sidebar_hr-container {
+        display: flex;
+        align-items: center; /* Center vertically */
+        justify-content: center;
+      }
+
+      .iconn{
+        width:90px
+      }
+      .dkd{
+        background-color:white;
+      }
+  
+   
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* additional css */
+
+  .main-div{
+    width:100%;
+    
+  }
+
+  .background-top {
+  background: linear-gradient(to bottom, #A48335, #a9883c);
+}
+
+  .colr-top{
+    background-color: #A48335;
+  }
+  .background-wiz{
+    background-color: #cccccc;
+  }
+  .log-btn{
+    background-color: #A48335;
+
+  }
+  .top-color{
+    background-color: #F1F1E8;
+  }
+  .bor:after{
+    border-color: #A48335;
+  }
+   /* Replace R, G, B with actual values */
+
+ 
+
+
+/*css for list bacground*/
+
+      
+
+
+
+        .content-div{
+            background-color: #F1F1E8;
+        }
+/*uploaded file 5.4 and 5.5 */
+
+        #signUpForm .form-header .stepIndicator.active {
+          font-weight: 600;
+      }
+      #signUpForm .form-header .stepIndicator.finish {
+          font-weight: 600;
+          color: #5a67d8;
+      }
+      #signUpForm .form-header .stepIndicator::before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%);
+          z-index: 9;
+          width: 20px;
+          height: 20px;
+          background-color: #c3dafe;
+          border-radius: 50%;
+          border: 3px solid #ebf4ff;
+      }
+
+
+      .relative {
+        position: relative;
+    }
+    /*uploaded file 5.4 */
+    .blur-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backdrop-filter: blur(1px); 
+        background-color: rgba(239, 233, 233, 0.5); /* Adjust the background color and opacity as needed */
+        pointer-events: none; /* Allows clicks to pass through the blurred element */
+    }
+       /*uploaded file 5.5 */
+    .blur-backgroun {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      backdrop-filter: blur(1px); /* Adjust the blur radius as needed */
+      background: rgba(255, 255, 255, 0.90); /* Adjust the background color and opacity as needed */
+      pointer-events: none; /* Allows clicks to pass through the blurred element */
+  }
+
+
+
+    
+    .iconn{
+      width:120px
+    }
+
+    
+    .sidebar_hr-container {
+        display: flex;
+        align-items: center; /* Center vertically */
+      }
+      
+      .sidebar_hr {
+        width: 250px;
+        height: 1px;
+        background: #D9D9D9;
+        box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.50);
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      
