@@ -17,10 +17,13 @@ function SingleUpload({name}) {
 
 <div class="shadow-xl bg-white flex flex-col items-center rounded-lg p-3">
 <h1 class="text-lg font-semibold mb-4">{name}</h1>
-<div class="border-dotted border-2 border-gray-300 rounded-md flex flex-col items-center justify-center cursor-pointer">
-    <img src={icon} alt="Upload Icon" class="mb-2" />
+<div class="relative border-dotted border-2 border-gray-300 rounded-md flex flex-col items-center justify-center cursor-pointer">
+  <input type="file" className='relative h-20 w-40 z-10 opacity-0' />
+   <div className='absolute z-0 flex flex-col justify-center items-center cursor-pointer'>
+   <img src={icon} alt="Upload Icon" class="mb-2" className='h-8 w-8' />
     <span class="text-gray-700 text-sm text-center leading-tight mb-1">Drag & Drop or</span>
     <span class="text-blue-600 text-sm font-medium underline text-center">Browse</span>
+   </div>
 </div>
 
 
